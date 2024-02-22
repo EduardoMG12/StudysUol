@@ -1,7 +1,7 @@
-const paragraph = document.getElementById("paragraph")
+let friends = ["Alan", "Mark", "John", "Robert", "David", "Lucas"]
 
-let firstName = prompt("What your first name? ") 
-let lastName = prompt("What your second name? ") 
-let yearsOld = prompt("how old are you? ")
-
-paragraph.innerHTML= ("My name is: " + firstName + " " + lastName + "; I have " + yearsOld + " years old")
+friends[0] = "Mark"
+friends[1] = "Alan"
+friends[5] = "David"
+friends[6] = "Robert"
+console.log(friends)
