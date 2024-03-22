@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "dev": "bun run app.ts --watch",
+    "dev:nm": "nodemon app.ts"
+  },
+  "name": "myexpressapplications",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/bun": "latest",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "5.11.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.1",
+    "prisma": "^5.11.0"
+  }
+}
