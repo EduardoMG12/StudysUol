@@ -1,0 +1,38 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/home.css">
+  </head>
+  <body>
+    <div
+      style="
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        gap: 20px;
+        font-size: 30px;
+      "
+    >
+      <p>First Page!</p>
+      <a
+        href="/login"
+        style="
+          color: red;
+          background-color: black;
+          border-radius: 12px;
+          padding: 10px 20px;
+        "
+        >Login</a
+      >
+    </div>
+  </body>
+</html>
