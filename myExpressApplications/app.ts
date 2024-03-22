@@ -3,9 +3,16 @@ import routes from './routes/index';
 
 const app = express();
 const port = 3000;
-import { PrismaClient } from '@prisma/client'
 
-const prisma = new PrismaClient()
+// Configure Express for use EJS how your visualization mechanism.
+app.set('view engine', 'ejs'); 
+//Define the location of your views folder.
+app.set('views', './views');
+
+
+// Serve static files from the public folder
+app.use(express.static('public'));
+
 
 // app is an instance of express.
 // METHOD is an HTTP request method, in lowercase, which is use after app.
