@@ -58,3 +58,11 @@ I welcome any feedback, suggestions, or contributions to improve this project. F
 + bcrypt: Library for hashing passwords
 + body-parser: Middleware for parsing incoming request bodies
 + ejs: Template engine for generating HTML with plain JavaScript
+
+## Observations
+
++ remember for acess to database
+
+```bash
+bun prisma studio 
+```
