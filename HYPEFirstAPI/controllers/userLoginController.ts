@@ -32,11 +32,17 @@ export const userLoginController = async (req:Request, res:Response) => {
 
         //Generate JWT
 
-        const expireInSeconds = 60* 60 * 24 * 7;
+        const expireInSeconds = 60 * 60;
 
         const tokenOptions = {expiresIn:expireInSeconds}
 
-        const token = jwt.sign({userId : user.id}, process.env.JWT_SECRET as string , tokenOptions);
+        const token = jwt.sign({userEmail : user.email}, process.env.JWT_SECRET as string , tokenOptions);
+
+        res.cookie('Authorization', token, {
+            secure: true,
+          });
+      
+
 
         res.status(200).json({token});
     } catch (err) {
