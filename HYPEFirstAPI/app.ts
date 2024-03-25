@@ -1,8 +1,7 @@
-import express from "express";
+import express from 'express';
 import routes from './routes/index';
 import auth from './routes/auth'
-import bodyParser from "body-parser";
-
+import bodyParser from 'body-parser';
 
 const app = express();
 const port = 3000;
