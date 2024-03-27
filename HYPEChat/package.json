@@ -1,0 +1,26 @@
+{
+  "name": "hypechat",
+  "module": "app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run app.ts",
+    "dev:hr": "bun --hot run app.ts"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/bun": "latest",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^4.17.21",
+    "@types/express-validator": "^3.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "consign": "^0.1.6",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1"
+  }
+}
