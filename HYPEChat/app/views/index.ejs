@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 
-		<title>Multiroom Chat</title>
+		<title><%= title %></title>
 		
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -24,12 +24,12 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <form accept-charset="UTF-8" role="form" class="form-signin">
+                            <form method="post" action="chat" accept-charset="UTF-8" role="form" class="form-signin">
                                 <fieldset>
                                     <label class="panel-login">
                                         <div class="login_result"></div>
                                     </label>
-                                    <input class="form-control" placeholder="Nome ou apelido" id="apelido" type="text">
+                                    <input class="form-control" placeholder="Nome ou apelido" id="apelido" type="text" name="userName">
                                     <br></br>
                                     <input class="btn btn-lg btn-success btn-block" type="submit" id="entrar" value="Entrar »">
                                 </fieldset>

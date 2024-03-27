@@ -1,13 +1,14 @@
 import express from 'express'
-import type { Request, Response } from 'express'
+import { homeController } from '../controllers/homeController'
+import { getChatController, postChatController } from '../controllers/chatController'
 
 
-const router = express()
+const router = express.Router()
 
+router.get('/', homeController)
 
+router.get('/chat', getChatController)
 
-router.get('/', (req:Request, res:Response) => {
-    res.send('Hello World')
-})
+router.post('/chat', postChatController)
 
 export default router
