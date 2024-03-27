@@ -1,7 +1,6 @@
-import express from "express"
+import app from './config/server.ts';
 
-const app = express()
-
-app.get("/", (req, res) => {
-    
+app.listen(3000, () => {
+    console.log("🚀 Server started 🚀")
+    console.log("http://localhost:3000")
 })
